@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cat Facts</title>
+  <link rel="stylesheet" href="static/css/styles.css"/>
+  <link rel="icon" href="static/images/favicon.ico"/>
+</head>
+<body>
+  <div class="cat-panel">
+    <div class="cat-bg day"></div>
+    <div class="cat-bg night"></div>
+
+    <h1>Cat Facts</h1>
+    <div id="signin-button" style="display: {{ buttonDisplay }};">
+      <span class="g-signin"
+            data-scope="{{ scope }}"
+            data-clientid="{{ clientId }}"
+            data-redirecturi="postmessage"
+            data-accesstype="offline"
+            data-cookiepolicy="single_host_origin"
+            data-callback="signInCallback"
+            data-approvalprompt="{{ approvalPrompt }}">
+      </span>
+    </div>
+    <div id="result" class="controls" style="display: none;">
+      <div class="control">
+        <label for="frequency">Send me a cat fact every</label>
+        <select id="frequency" name="frequency">
+          <option value="15">15 minutes</option>
+          <option value="30">30 minutes</option>
+          <option value="60">1 hour</option>
+        </select>
+      </div>
+      <div class="control">
+        <input type="checkbox" id="night-mode" name="night-mode"></input>
+        <label for="night-mode">Send me cat facts at night, too</label>
+      </div>
+    </div>
+  </div>
+
+  <div id="status-bar"></div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="static/js/main.js"></script>
+  <script src="https://plus.google.com/js/client:plusone.js?onload=start"></script>
+</body>
+</html>

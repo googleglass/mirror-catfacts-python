@@ -1,0 +1,91 @@
+html, body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  -webkit-user-select: none;
+}
+
+.cat-panel {
+  position: relative;
+  width: 640px;
+  height: 640px;
+  margin: 60px auto auto auto;
+}
+
+.cat-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.cat-bg.day {
+  background-image: url(/static/images/daycat.jpg);
+}
+
+.cat-bg.night {
+  display: none;
+  background-image: url(/static/images/nightcat.jpg);
+}
+
+h1 {
+  position: absolute;
+  left: 60px;
+  top: 60px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 70px;
+  color: white;
+  text-shadow: 0 1px 1px black;
+}
+
+#signin-button {
+  position: absolute;
+  left: 470px;
+  top: 90px;
+}
+
+.controls {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+  right: 40px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 40px;
+  font-size: 30px;
+  font-weight: 300;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.control:first-child {
+  margin-bottom: 40px;
+}
+
+select {
+  vertical-align: middle;
+}
+
+input[type=checkbox] {
+  width: 30px;
+  height: 30px;
+}
+
+#status-bar {
+  display: none;
+  width: 640px;
+  height: 40px;
+  margin: 10px auto auto auto;
+  line-height: 40px;
+  text-align: center;
+  background-color: #ffe;
+  border: 1px solid #cca;
+  color: #663;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}

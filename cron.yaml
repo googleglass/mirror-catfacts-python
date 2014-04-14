@@ -1,0 +1,4 @@
+cron:
+- description: Push cat facts
+  url: /push
+  schedule: every 15 minutes synchronized
